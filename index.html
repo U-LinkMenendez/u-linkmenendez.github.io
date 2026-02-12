@@ -16,6 +16,25 @@ body{
     color:#1e293b;
 }
 
+nav{
+    background:white;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1e293b;
+    margin-left:20px;
+    font-weight:500;
+}
+
 .container{
     max-width:1100px;
     margin:auto;
@@ -74,10 +93,6 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-.card h3{
-    margin-bottom:15px;
-}
-
 .process{
     background:#eef2ff;
 }
@@ -87,6 +102,16 @@ body{
     color:white;
     text-align:center;
     padding:80px 20px;
+}
+
+.legal{
+    background:#f1f5f9;
+    font-size:14px;
+    padding:60px 20px;
+}
+
+.legal h3{
+    margin-top:30px;
 }
 
 .footer{
@@ -100,6 +125,17 @@ body{
 
 <body>
 
+<!-- NAV -->
+<nav>
+    <strong>U Link</strong>
+    <div>
+        <a href="#que-es">Qué es</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#como">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+
 <!-- HERO -->
 <section class="hero">
     <h1>Automatiza tu captación y seguimiento 24/7</h1>
@@ -107,69 +143,68 @@ body{
     <a href="#contacto" class="btn">Solicitar Diagnóstico Gratuito</a>
 </section>
 
-<!-- PROBLEMA -->
-<section class="container section">
-    <h2>¿Estás perdiendo pacientes o alumnos por no responder a tiempo?</h2>
+<!-- QUE ES -->
+<section class="container section" id="que-es">
+    <h2>¿Qué es U Link?</h2>
+    <p style="max-width:700px;margin:auto;font-size:18px;">
+        U Link es un sistema profesional de automatización comercial que conecta tu negocio con tus pacientes o alumnos mediante WhatsApp Business, optimizando la captación, seguimiento y confirmación de citas.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section class="container section process" id="servicios">
+    <h2>Servicios</h2>
     <div class="features">
         <div class="card">
-            <h3>⏳ Respuestas tardías</h3>
-            <p>Muchos prospectos escriben fuera de horario y nunca reciben seguimiento.</p>
+            <h3>🤖 Respuesta Automática 24/7</h3>
+            <p>Atiende inmediatamente cualquier mensaje recibido, incluso fuera de horario.</p>
         </div>
         <div class="card">
-            <h3>📉 Falta de seguimiento</h3>
-            <p>Los interesados preguntan una vez y después se pierden.</p>
+            <h3>📆 Confirmación y Recordatorios</h3>
+            <p>Reduce ausencias enviando recordatorios automáticos y confirmaciones de cita.</p>
         </div>
         <div class="card">
-            <h3>📋 Sin control de conversaciones</h3>
-            <p>No hay sistema para organizar citas y recordatorios.</p>
+            <h3>📊 Seguimiento Inteligente</h3>
+            <p>Convierte interesados en pacientes o alumnos inscritos con automatización estratégica.</p>
         </div>
     </div>
 </section>
 
-<!-- SOLUCIÓN -->
-<section class="container section process">
-    <h2>La Solución: U Link by Menéndez</h2>
-    <p>Implementamos un sistema inteligente que trabaja por ti 24/7.</p>
-    <div class="features">
-        <div class="card">
-            <h3>🤖 Respuesta automática inmediata</h3>
-            <p>Atiende al instante cualquier mensaje recibido.</p>
-        </div>
-        <div class="card">
-            <h3>📆 Confirmación y recordatorio de citas</h3>
-            <p>Reduce cancelaciones y ausencias.</p>
-        </div>
-        <div class="card">
-            <h3>📊 Seguimiento estratégico</h3>
-            <p>Convierte interesados en pacientes o alumnos inscritos.</p>
-        </div>
+<!-- COMO FUNCIONA -->
+<section class="container section" id="como">
+    <h2>¿Cómo funciona?</h2>
+    <div style="max-width:700px;margin:auto;text-align:left;font-size:18px;line-height:1.6;">
+        <p><strong>1.</strong> Analizamos tu proceso actual de atención.</p>
+        <p><strong>2.</strong> Diseñamos la automatización personalizada.</p>
+        <p><strong>3.</strong> Conectamos tu número oficial de WhatsApp Business.</p>
+        <p><strong>4.</strong> Comienzas a recibir y gestionar prospectos de forma automática.</p>
     </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="container section">
-    <h2>Resultados que puedes esperar</h2>
-    <div class="features">
-        <div class="card">
-            <h3>📈 Más citas confirmadas</h3>
-        </div>
-        <div class="card">
-            <h3>📚 Más inscripciones</h3>
-        </div>
-        <div class="card">
-            <h3>🕒 Menos carga administrativa</h3>
-        </div>
-        <div class="card">
-            <h3>💬 Atención profesional 24/7</h3>
-        </div>
-    </div>
-</section>
-
-<!-- CTA FINAL -->
+<!-- CTA -->
 <section class="cta" id="contacto">
     <h2>Agenda tu Diagnóstico Gratuito</h2>
     <p>Analizamos tu proceso actual y te mostramos cómo automatizarlo en menos de 7 días.</p>
     <a href="https://wa.me/529996690192" class="btn">Hablar por WhatsApp</a>
+</section>
+
+<!-- LEGAL -->
+<section class="legal container">
+    <h2>Información Legal</h2>
+
+    <h3>Política de Privacidad</h3>
+    <p>
+        U Link respeta la privacidad de la información de sus clientes. 
+        Los datos recopilados se utilizan únicamente para la prestación del servicio 
+        y no se comparten con terceros sin consentimiento.
+    </p>
+
+    <h3>Términos de Servicio</h3>
+    <p>
+        El uso de U Link implica la aceptación de nuestras condiciones de servicio.
+        El cliente es responsable del uso adecuado de la plataforma y del cumplimiento
+        de las políticas de WhatsApp Business y Meta.
+    </p>
 </section>
 
 <footer class="footer">
