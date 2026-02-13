@@ -138,7 +138,7 @@ nav a:hover{
     margin-bottom:10px;
 }
 
-/* CARDS */
+/* FEATURES */
 .features{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -163,18 +163,21 @@ nav a:hover{
     background:#f8fafc;
 }
 
-.price-card{
-    background:white;
-    padding:45px;
-    border-radius:20px;
-    box-shadow:0 30px 70px rgba(0,0,0,0.08);
+.pricing .card{
     text-align:center;
-    max-width:420px;
-    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:360px;
+    position:relative;
+}
+
+.pricing .card p{
+    min-height:50px;
 }
 
 .price{
-    font-size:48px;
+    font-size:42px;
     font-weight:800;
     margin:20px 0;
 }
@@ -183,6 +186,30 @@ nav a:hover{
     font-size:16px;
     font-weight:500;
     color:#64748b;
+}
+
+/* PRO DESTACADO */
+.popular{
+    border:2px solid #22c55e;
+    transform:scale(1.05);
+}
+
+.popular:hover{
+    transform:scale(1.05) translateY(-10px);
+}
+
+.popular-badge{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#22c55e;
+    color:white;
+    padding:6px 18px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(34,197,94,0.4);
 }
 
 /* CTA */
@@ -211,185 +238,112 @@ nav a:hover{
     font-size:14px;
 }
 
-.legal h2{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:40px;
-}
-
-.legal h3{
-    margin-top:40px;
-}
-
 .footer{
     text-align:center;
     padding:40px;
     font-size:14px;
     background:#e2e8f0;
 }
-
 </style>
 </head>
 
 <body>
 
 <nav>
-    <strong>U Link</strong>
-    <div>
-        <a href="#servicios">Servicios</a>
-        <a href="#precios">Precios</a>
-        <a href="#contacto">Contacto</a>
-    </div>
+<strong>U Link</strong>
+<div>
+<a href="#servicios">Servicios</a>
+<a href="#precios">Precios</a>
+<a href="#contacto">Contacto</a>
+</div>
 </nav>
 
 <section class="hero">
-    <div class="badge">Plataforma de Automatización Comercial en México 🇲🇽</div>
-    <h1>Convierte cada mensaje en una cita, inscripción o venta</h1>
-    <p>Automatización profesional por WhatsApp que capta, califica y da seguimiento a tus prospectos 24/7, mientras tu equipo se enfoca en cerrar y atender.</p>
-    <a href="#contacto" class="btn">Solicitar Diagnóstico Gratuito</a>
+<div class="badge">Plataforma de Automatización Comercial en México</div>
+<h1>Convierte cada mensaje en una cita, inscripción o venta</h1>
+<p>Automatización profesional por WhatsApp que capta, califica y da seguimiento a tus prospectos 24/7, mientras tu equipo se enfoca en cerrar y atender.</p>
+<a href="#contacto" class="btn">Solicitar Diagnóstico Gratuito</a>
 </section>
 
+<!-- MÉTRICAS -->
 <section class="container">
-    <div class="metrics">
-        <div class="metric">
-            <h3>+40%</h3>
-            <p>Incremento promedio en citas confirmadas</p>
-        </div>
-        <div class="metric">
-            <h3>24/7</h3>
-            <p>Atención automática sin interrupciones</p>
-        </div>
-        <div class="metric">
-            <h3>-60%</h3>
-            <p>Reducción en pérdida de prospectos</p>
-        </div>
-    </div>
+<div class="metrics">
+<div class="metric">
+<h3>+40%</h3>
+<p>Incremento promedio en citas confirmadas</p>
+</div>
+<div class="metric">
+<h3>24/7</h3>
+<p>Atención automatizada sin interrupciones</p>
+</div>
+<div class="metric">
+<h3>-60%</h3>
+<p>Reducción en pérdida de prospectos</p>
+</div>
+</div>
 </section>
 
+<!-- SERVICIOS -->
 <section class="container" id="servicios">
-    <h2 class="section-title">Automatización Inteligente</h2>
-    <p class="section-sub">Diseñamos un sistema personalizado de captación y seguimiento para que ningún prospecto quede sin respuesta ni seguimiento.</p>
+<h2 class="section-title">Automatización Inteligente</h2>
+<p class="section-sub">
+Diseñamos un sistema personalizado de captación y seguimiento para que ningún prospecto se quede sin respuesta, ni seguimiento.
+</p>
 
-    <div class="features">
-        <div class="card">
-            <h3>🤖 Respuestas Automatizadas 24/7</h3>
-            <p>Atención inmediata incluso fuera de horario laboral.</p>
-        </div>
-        <div class="card">
-            <h3>📆 Confirmaciones y Recordatorios</h3>
-            <p>Automatización de confirmaciones para reducir ausencias y cancelaciones.</p>
-        </div>
-        <div class="card">
-            <h3>📊 Seguimiento Estratégico</h3>
-            <p>Flujos diseñados para convertir interesados en clientes reales.</p>
-        </div>
-    </div>
+<div class="features">
+<div class="card">
+<h3>🤖 Respuestas Automatizadas 24/7</h3>
+<p>Atención inmediata incluso fuera de horario laboral.</p>
+</div>
+
+<div class="card">
+<h3>📆 Confirmaciones y Recordatorios</h3>
+<p>Automatización de confirmaciones para reducir ausencias y cancelaciones.</p>
+</div>
+
+<div class="card">
+<h3>📊 Seguimiento Estratégico</h3>
+<p>Flujos diseñados para convertir interesados en clientes reales.</p>
+</div>
+</div>
 </section>
 
+<!-- PLANES -->
 <section class="container pricing" id="precios">
-    <h2 class="section-title">Planes</h2>
-    <div class="features">
-        <div class="card">
-            <h3>Starter</h3>
-            <div class="price">$499 MXN <small>/ mes</small></div>
-            <p>Ideal para emprendedores.</p>
-            <a href="#contacto" class="btn">Elegir Plan</a>
-        </div>
+<h2 class="section-title">Planes</h2>
 
-        <div class="card">
-            <h3>Pro</h3>
-            <div class="price">$999 MXN <small>/ mes</small></div>
-            <p>Para empresas en crecimiento.</p>
-            <a href="#contacto" class="btn">Elegir Plan</a>
-        </div>
+<div class="features">
 
-        <div class="card">
-            <h3>Enterprise</h3>
-            <div class="price">Personalizado</div>
-            <p>Soluciones a medida para grandes organizaciones.</p>
-            <a href="#contacto" class="btn">Contactar</a>
-        </div>
-    </div>
+<div class="card">
+<h3>Starter</h3>
+<div class="price">$499 MXN <small>/ mes</small></div>
+<p>Ideal para emprendedores.</p>
+<a href="#contacto" class="btn">Elegir Plan</a>
+</div>
+
+<div class="card popular">
+<div class="popular-badge">Más Popular</div>
+<h3>Pro</h3>
+<div class="price">$999 MXN <small>/ mes</small></div>
+<p>Para empresas en crecimiento.</p>
+<a href="#contacto" class="btn">Elegir Plan</a>
+</div>
+
+<div class="card">
+<h3>Enterprise</h3>
+<div class="price">Personalizado</div>
+<p>Soluciones a medida para grandes organizaciones.</p>
+<a href="#contacto" class="btn">Contactar</a>
+</div>
+
+</div>
 </section>
 
 <section class="cta" id="contacto">
-    <h2>Transforma tu proceso comercial en menos de 7 días</h2>
-    <p>Agenda tu diagnóstico gratuito y descubre cómo automatizar tu captación sin aumentar tu equipo.</p>
-    <a href="https://wa.me/529996690192" class="btn">Hablar por WhatsApp</a>
+<h2>Transforma tu proceso comercial en menos de 7 días</h2>
+<p>Agenda tu diagnóstico gratuito y descubre cómo automatizar tu captación sin aumentar tu staff.</p>
+<a href="https://wa.me/529996690192" class="btn">Hablar por WhatsApp</a>
 </section>
-
-<section class="legal container">
-    <h2>Información Legal</h2>
-
-    <h3>Aviso de Privacidad</h3>
-    <p>
-        En cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP),
-        se informa que U Link, marca comercial operada por Ulises Menéndez Badías,
-        con domicilio en Mérida, Yucatán, México C.P. 97125, es responsable del tratamiento de los datos personales
-        que recabe a través de sus canales digitales.
-    </p>
-
-    <h4>Datos que se recaban</h4>
-    <p>
-        Los datos personales que pueden recabarse incluyen: nombre, número telefónico,
-        dirección de correo electrónico, nombre del negocio y cualquier información
-        proporcionada voluntariamente mediante formularios, WhatsApp u otros medios digitales.
-    </p>
-
-    <h4>Finalidades del tratamiento</h4>
-    <p>
-        Los datos personales serán utilizados para:
-        <ul>
-            <li>Proveer los servicios de automatización comercial contratados.</li>
-            <li>Contactar para diagnóstico, soporte o seguimiento comercial.</li>
-            <li>Enviar información relacionada con mejoras, actualizaciones o nuevos servicios.</li>
-        </ul>
-    </p>
-
-    <h4>Transferencia de datos</h4>
-    <p>
-        U Link no vende ni comparte datos personales con terceros sin consentimiento,
-        salvo cuando sea necesario para la prestación del servicio (por ejemplo,
-        plataformas tecnológicas como WhatsApp Business o proveedores de hosting),
-        o por requerimiento legal de autoridad competente.
-    </p>
-
-    <h4>Derechos ARCO</h4>
-    <p>
-        El titular de los datos puede ejercer en cualquier momento sus derechos de Acceso,
-        Rectificación, Cancelación u Oposición (Derechos ARCO), enviando una solicitud
-        al correo electrónico: u_menendez-b@yahoo.com
-    </p>
-
-    <h4>Medidas de seguridad</h4>
-    <p>
-        U Link implementa medidas administrativas, técnicas y físicas razonables
-        para proteger los datos personales contra daño, pérdida, alteración,
-        destrucción o uso no autorizado.
-    </p>
-
-    <h4>Cambios al aviso</h4>
-    <p>
-        Cualquier modificación al presente Aviso de Privacidad será publicada
-        en este mismo sitio web.
-    </p>
-
-    <h3>Términos de Servicio</h3>
-    <p>
-        El uso de la plataforma U Link implica la aceptación de estos términos.
-        El cliente es responsable del uso adecuado del sistema y del cumplimiento
-        de las políticas de WhatsApp Business, Meta Platforms Inc. y demás
-        regulaciones aplicables en México.
-    </p>
-
-    <h4>Limitación de Responsabilidad</h4>
-    <p>
-        U Link proporciona herramientas de automatización comercial.
-        Los resultados pueden variar dependiendo del modelo de negocio,
-        estrategia comercial y operación del cliente.
-    </p>
-</section>
-
 
 <footer class="footer">
 © 2026 U Link | Plataforma de Automatización Comercial en México
